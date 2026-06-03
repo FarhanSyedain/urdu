@@ -6,7 +6,6 @@ venv/
 .env
 
 # Project artifacts
-outputs/
 data/raw/
 *.pt
 *.ckpt
