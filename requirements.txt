@@ -1,0 +1,16 @@
+# Core (required) -------------------------------------------------------------
+torch>=2.12          # macOS arm64 / MPS wheels exist for Python 3.14 (torch 2.12+)
+numpy>=1.26
+pandas>=2.1
+openpyxl>=3.1        # read .xlsx datasets (e.g. urdu_tweets_sentiment_10k.xlsx)
+scikit-learn>=1.4    # metrics + stratified split helpers
+networkx>=3.2        # cognitive-graph data structure
+matplotlib>=3.8      # static PNG render of the cognitive graph
+tqdm>=4.66           # progress bars
+
+# Optional but recommended ----------------------------------------------------
+# Proper Urdu (RTL, Nastaliq) rendering inside the matplotlib PNG graph.
+# Without these the interactive HTML still renders Urdu perfectly in a browser.
+arabic-reshaper>=3.0
+python-bidi>=0.4
+pyvis>=0.3           # interactive HTML cognitive graph (best Urdu rendering)
